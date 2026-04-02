@@ -1,0 +1,60 @@
+2026-03-29 14:59:57,594 - INFO - Pipeline started
+2026-03-29 14:59:57,594 - INFO - Extract step started
+2026-03-29 14:59:57,795 - INFO - Data loaded successfully
+2026-03-29 14:59:57,833 - INFO - Pipeline finished
+2026-03-29 15:04:01,257 - INFO - Pipeline started
+2026-03-29 15:04:01,257 - INFO - Extract step started
+2026-03-29 15:04:01,436 - INFO - Data loaded successfully
+2026-03-29 15:04:01,455 - INFO - Pipeline finished
+2026-03-29 15:11:50,996 - INFO - Pipeline started
+2026-03-29 15:11:50,996 - INFO - Extract step started
+2026-03-29 15:11:51,182 - INFO - Data loaded successfully
+2026-03-29 15:11:51,182 - INFO - Transform step started
+2026-03-29 15:11:51,297 - INFO - Transform step finished successfully
+2026-03-29 15:11:51,322 - INFO - Pipeline finished
+2026-03-29 15:15:13,599 - INFO - Pipeline started
+2026-03-29 15:15:13,599 - INFO - Extract step started
+2026-03-29 15:15:13,765 - INFO - Data loaded successfully
+2026-03-29 15:15:13,765 - INFO - Transform step started
+2026-03-29 15:15:13,918 - INFO - Transform step finished successfully
+2026-03-29 15:15:13,938 - INFO - Pipeline finished
+2026-03-29 15:16:36,148 - INFO - Pipeline started
+2026-03-29 15:16:36,148 - INFO - Extract step started
+2026-03-29 15:16:36,325 - INFO - Data loaded successfully
+2026-03-29 15:16:36,326 - INFO - Transform step started
+2026-03-29 15:16:36,438 - INFO - Transform step finished successfully
+2026-03-29 15:16:36,442 - INFO - Load step started
+2026-03-29 15:16:36,527 - INFO - Data saved to data/processed/clean_data.csv
+2026-03-29 15:16:36,527 - INFO - Pipeline finished
+2026-03-29 15:18:02,787 - INFO - Pipeline started
+2026-03-29 15:18:02,787 - INFO - Extract step started
+2026-03-29 15:18:02,988 - INFO - Data loaded successfully
+2026-03-29 15:18:02,989 - INFO - Transform step started
+2026-03-29 15:18:03,098 - INFO - Transform step finished successfully
+2026-03-29 15:18:03,101 - INFO - Load step started
+2026-03-29 15:18:03,179 - INFO - Data saved to data/processed/clean_data.csv
+2026-03-29 15:18:03,179 - INFO - Pipeline finished
+2026-03-29 15:20:08,269 - INFO - Pipeline started
+2026-03-29 15:20:08,269 - INFO - Extract step started
+2026-03-29 15:20:08,437 - INFO - Data loaded successfully
+2026-03-29 15:20:08,437 - INFO - Transform step started
+2026-03-29 15:20:08,547 - INFO - Transform step finished successfully
+2026-03-29 15:20:08,551 - INFO - Load step started
+2026-03-29 15:20:08,639 - INFO - Data saved to data/processed/clean_data.csv
+2026-03-29 15:20:08,639 - INFO - Pipeline finished
+2026-03-29 15:20:19,095 - INFO - Pipeline started
+2026-03-29 15:20:19,095 - INFO - Extract step started
+2026-03-29 15:20:19,241 - INFO - Data loaded successfully
+2026-03-29 15:20:19,241 - INFO - Transform step started
+2026-03-29 15:20:19,359 - INFO - Transform step finished successfully
+2026-03-29 15:20:19,361 - INFO - Load step started
+2026-03-29 15:20:19,474 - INFO - Data saved to data/processed/clean_data.csv
+2026-03-29 15:20:19,474 - INFO - Pipeline finished
+2026-03-29 15:31:44,285 - INFO - Pipeline started
+2026-03-29 15:31:44,285 - INFO - Extract step started
+2026-03-29 15:31:44,459 - INFO - Data loaded successfully
+2026-03-29 15:31:44,459 - INFO - Transform step started
+2026-03-29 15:31:44,590 - INFO - Transform step finished successfully
+2026-03-29 15:31:44,593 - INFO - Load step started
+2026-03-29 15:31:44,672 - INFO - Data saved to data/processed/clean_data.csv
+2026-03-29 15:31:44,672 - INFO - Pipeline finished

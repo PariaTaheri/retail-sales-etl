@@ -19,14 +19,14 @@ The goal of this project is to simulate a real-world data engineering workflow, 
 ```mermaid
 graph LR
 A[Raw CSV Data] --> B[Extract]
-B --> C[Transform (Pandas)]
+B --> C[Transform - Pandas]
 C --> D[Clean Data]
 D --> E[Load to SQLite]
 E --> F[Validation Query]
 
 ---
 
-# ✅ 🧩 قسمت 3 (Tech Stack)
+# ✅ 🧩 part 3 (Tech Stack)
 
 ```markdown
 ## ⚙️ Tech Stack

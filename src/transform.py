@@ -1,31 +1,39 @@
+import logging
 import pandas as pd
 
-def clean_data(df):
-    df = df.copy()
 
-    df.columns = df.columns.str.strip().str.lower()
+def transform(df):
+    """
+    Clean and transform raw data
+    """
+    logging.info("Transform step started")
 
-    df = df.drop_duplicates()
+    try:
+        df = df.copy()
 
-    df["order_date"] = pd.to_datetime(df["order_date"], errors="coerce")
-    df["ship_date"] = pd.to_datetime(df["ship_date"], errors="coerce")
+        # 🔹 1. Standardize column names (lowercase + underscore)
+        df.columns = df.columns.str.lower().str.replace(" ", "_")
 
-    df["sales"] = pd.to_numeric(df["sales"], errors="coerce")
-    df["quantity"] = pd.to_numeric(df["quantity"], errors="coerce")
-    df["discount"] = pd.to_numeric(df["discount"], errors="coerce")
-    df["profit"] = pd.to_numeric(df["profit"], errors="coerce")
-    df["shipping_cost"] = pd.to_numeric(df["shipping_cost"], errors="coerce")
+        # 🔹 2. Remove duplicates
+        df = df.drop_duplicates()
 
-    df = df.dropna(subset=["order_id", "order_date", "sales"])
+        # 🔹 3. Handle missing values (example)
+        df = df.dropna(subset=["order_date", "ship_date"])
 
-    return df
+        # 🔹 4. Convert date columns
+        df["order_date"] = pd.to_datetime(df["order_date"], errors="coerce")
+        df["ship_date"] = pd.to_datetime(df["ship_date"], errors="coerce")
 
-if __name__ == "__main__":
-    file_path = "data/raw/SuperStoreOrders.csv"
-    df = pd.read_csv(file_path)
-    clean_df = clean_data(df)
+        # 🔹 5. Create new feature (very important in real jobs)
+        df["processing_days"] = (df["ship_date"] - df["order_date"]).dt.days
 
-    print("Cleaned data:")
-    print(clean_df.head())
-    print(clean_df.info())
-    clean_df.to_csv("data/processed/clean_orders.csv", index=False)
+        # 🔹 6. Remove negative values (data quality check)
+        df = df[df["processing_days"] >= 0]
+
+        logging.info("Transform step finished successfully")
+
+        return df
+
+    except Exception as e:
+        logging.error(f"Error in transform step: {e}")
+        raise
