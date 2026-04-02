@@ -1,3 +1,4 @@
+
 # 🛒 Retail Sales ETL Pipeline
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
@@ -23,7 +24,7 @@ B --> C[Transform - Pandas]
 C --> D[Clean Data]
 D --> E[Load to SQLite]
 E --> F[Validation Query]
-
+```
 ---
 
 # ✅ 🧩 part 3 (Tech Stack)
